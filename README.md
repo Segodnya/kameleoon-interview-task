@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# Task Report: React.js, HTML, and CSS Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have completed the given test task to assess my skills in React.js, HTML, and CSS. Below is a summary of the work done.
+
+## Technical Requirements
+
+- Created React application using the create-react-app application template.
+- Utilized the following external libraries: axios, classnames, react-router-dom.
+- Demonstrated the use of React hooks.
+- Used SCSS Modules.
+
+## Functionality Requirements
+
+- Developed a dashboard page that displays a list of created A/B tests from a JSON file obtained through the provided API.
+- Implemented table row highlighting on hover as shown in the mockup.
+- Displayed sites in the corresponding column without http or https protocols and a "www" prefix.
+- Implemented filtering by item name, hiding other records and showing only the items that match the filter. Displayed a corresponding message and a reset button if no records are found.
+- Enabled sorting (ASC, DESC) by clicking on the column titles:
+- - Sorted name, type, and site columns in alphabetical order.
+- - Sorted status column as follows:
+- - - ASC: Online, Paused, Stopped, Draft
+- - - DESC: Draft, Stopped, Paused, Online
+
+## Additional Tasks
+
+- Implemented routing between three pages (dashboard, results, and finalize) using react-router-dom.
+- Implemented URL redirection to /results/[testId] and /finalize/[testId] when the user clicks on the Results or Finalize buttons on the dashboard page, respectively.
+- Ensured smooth redirection without reloading the browser window.
 
 ## Available Scripts
 
@@ -28,19 +53,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
