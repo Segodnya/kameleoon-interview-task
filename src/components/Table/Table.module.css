@@ -32,7 +32,6 @@
 }
 
 .tr td:first-of-type {
-  padding-left: 15px;
   color: var(--table-col-name);
   font-size: 13px;
   font-weight: 500;
@@ -65,4 +64,15 @@
 
 .online {
   color: var(--status-online);
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 70px;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }

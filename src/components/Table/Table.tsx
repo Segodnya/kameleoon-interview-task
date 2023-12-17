@@ -14,7 +14,7 @@ interface ITableProps {
 const Table = ({ data, handleSort, sortedColumn }: ITableProps) => {
   const navigate = useNavigate();
 
-  const SITE_COLORS = ["E14165", "C2C2FF", "8686FF"];
+  const SITE_COLORS = ["#E14165", "#C2C2FF", "#8686FF"];
 
   const statusClass = (status: EStatus) => {
     return classNames({
@@ -47,7 +47,14 @@ const Table = ({ data, handleSort, sortedColumn }: ITableProps) => {
       <tbody>
         {data.map((item, index) => (
           <tr key={index} className={styles.tr}>
-            <td>{item.name}</td>
+            <td>
+              <div
+                className={styles.border}
+                style={{ borderLeftColor: `${SITE_COLORS[item.siteId - 1]}` }}
+              >
+                {item.name}
+              </div>
+            </td>
             <td>{item.type}</td>
             <td className={statusClass(item.status)}>{item.status}</td>
             <td>{item.url && extractDomain(item.url)}</td>
