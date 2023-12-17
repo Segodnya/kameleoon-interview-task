@@ -33,6 +33,11 @@ Figma: https://www.figma.com/file/PFdFpIajQbuGibIbEYnE3l/Interview-task-for-fron
 - Implemented URL redirection to /results/[testId] and /finalize/[testId] when the user clicks on the Results or Finalize buttons on the dashboard page, respectively.
 - Ensured smooth redirection without reloading the browser window.
 
+## TODO
+
+- Fix the text case in the Type, Status columns;
+- Write unit tests for the sortTestData function.
+
 ## Available Scripts
 
 In the project directory, you can run:
