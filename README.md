@@ -2,6 +2,12 @@
 
 I have completed the given test task to assess my skills in React.js, HTML, and CSS. Below is a summary of the work done.
 
+Task: https://development.kameleoon.net/oivanov/frontend-interview-task
+
+API: https://development.kameleoon.net/oivanov/frontend-interview-task-api
+
+Figma: https://www.figma.com/file/PFdFpIajQbuGibIbEYnE3l/Interview-task-for-frontend-developers
+
 ## Technical Requirements
 
 - Created React application using the create-react-app application template.
