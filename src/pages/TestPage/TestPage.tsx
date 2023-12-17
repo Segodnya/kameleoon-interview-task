@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchTestById } from "../api/api";
-import { ITest } from "../types/types";
+import { fetchTestById } from "../../api/api";
+import { ITest } from "../../types/types";
+import styles from "./TestPage.module.css";
 
 export function TestPage() {
   const [isFetching, setIsFetching] = useState(true);
@@ -28,5 +29,9 @@ export function TestPage() {
     fetchData();
   }, [testId]);
 
-  return <main>{isFetching ? <p>Loading...</p> : <p>{testName}</p>}</main>;
+  return (
+    <section className={styles.section}>
+      {isFetching ? <p>Loading...</p> : <p>{testName}</p>}
+    </section>
+  );
 }

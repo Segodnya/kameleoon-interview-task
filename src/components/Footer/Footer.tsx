@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { Back } from "./Back";
+import { Back } from "../Back/Back";
 
 export function Footer() {
   const location = useLocation();

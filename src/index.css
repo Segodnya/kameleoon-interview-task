@@ -1,8 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:wght@400;700&family=Seymour+One&display=swap");
+
+:root {
+  --background: #fafafa;
+  --text: #222;
+  --table-head: #999;
+  --table-row: #fff;
+  --table-col-name: #474747;
+  --table-col-type: #5c5c5c;
+  --table-row-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  --status-draft: #5c5c5c;
+  --status-paused: #ff8346;
+  --status-stopped: #fe4848;
+  --status-online: #1bda9d;
+  --button-primary: #2ee5ac;
+  --button-secondary: #7d7d7d;
+  --button-text: #fff;
+  --input-field: #ebebeb;
+  --input-text: #d1d1d1;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+  color: var(--text);
 }

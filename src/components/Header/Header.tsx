@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import styles from "./Header.module.css";
 
 export function Header() {
   const location = useLocation();
@@ -14,7 +15,7 @@ export function Header() {
 
   return (
     <header>
-      <h1>{title}</h1>
+      <h1 className={styles.title}>{title}</h1>
     </header>
   );
 }

@@ -1,0 +1,43 @@
+.wrapper {
+  margin-top: 40px;
+  padding: 0 16px;
+  position: relative;
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid var(--input-filed);
+  background: var(--table-row);
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  background-image: url("../../assets/Search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input {
+  height: 100%;
+  padding: 0 12px;
+  flex-grow: 1;
+  border: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: var(--input-text);
+}
+
+.span {
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--input-text);
+}

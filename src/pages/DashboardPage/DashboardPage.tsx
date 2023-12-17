@@ -1,10 +1,10 @@
 import { useState, useEffect, ChangeEvent } from "react";
-import SearchBar from "../components/SearchBar";
-import Table from "../components/Table";
-import ResultMessage from "../components/ResultMessage";
-import { IData, ISortConfig, ISite } from "../types/types";
-import { filterTestData, sortTestData } from "../utils/utils";
-import { fetchSiteData, fetchTestData } from "../api/api";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import Table from "../../components/Table/Table";
+import ResultMessage from "../../components/ResultMessage/ResultMessage";
+import { IData, ISortConfig, ISite } from "../../types/types";
+import { filterTestData, sortTestData } from "../../utils/utils";
+import { fetchSiteData, fetchTestData } from "../../api/api";
 
 export function DashboardPage() {
   const [isFetching, setIsFetching] = useState(true);
@@ -73,9 +73,12 @@ export function DashboardPage() {
   }, [sortConfig]);
 
   return (
-    <main>
-      <SearchBar value={searchInput} onChange={handleInputChange} />
-      <span>{itemCount} items displayed</span>
+    <>
+      <SearchBar
+        value={searchInput}
+        onChange={handleInputChange}
+        itemCount={itemCount}
+      />
       {isFetching ? (
         <p>Loading...</p>
       ) : itemCount === 0 ? (
@@ -87,6 +90,6 @@ export function DashboardPage() {
           sortedColumn={sortConfig.key}
         />
       )}
-    </main>
+    </>
   );
 }

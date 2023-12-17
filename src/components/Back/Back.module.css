@@ -1,0 +1,21 @@
+.back {
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.back::before {
+  content: "";
+  display: inline-block;
+  margin-right: 16px;
+  width: 9px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-image: url("../../assets/Chevron.svg");
+}
